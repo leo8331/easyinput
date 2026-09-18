@@ -1,0 +1,31 @@
+# ===== EasyInput V0.1 · 上传 GitHub 用 =====
+# 原则：大文件走 Release 附件，隐私文件绝不提交
+
+# ---- 程序本体（259MB，走 Release）----
+_internal/
+EasyInput.exe
+*.pyd
+*.dll
+
+# ---- 大文件（走 Release 附件）----
+*.zip
+models/
+models-faster-whisper-small.zip
+
+# ---- ⚠️ 隐私：含 API Key，绝不能提交 ----
+config.json
+macros.json
+wb_hook_state.json
+
+# ---- 运行产物 ----
+app_log.txt
+last_recording.wav
+easyinput_exe_error.log
+*.log
+*.wav
+
+# ---- 保留（这些要进仓库）----
+!firmware/easyinput_fw.bin
+!README.md
+!使用说明.md
+!上传GitHub说明.md
